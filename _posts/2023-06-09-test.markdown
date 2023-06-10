@@ -1,10 +1,35 @@
 ---
 title: 404CTF 2023 - OSINT - "Le tour de France"
-date: 2023-06-09 23:50:00 +0200
+date: 2023-06-10 14:22:00 +0200
 categories: [404CTF2023]
 tags: [404ctf, osint]
 ---
 
-Un petit test de post en markdown, je ne sais pas si ça marchera bien.
 
-Voyons voir ça ...
+Catégorie : OSINT  
+Difficulté : Intro  
+Auteur : Hg#1962  
+
+---
+
+![photo de panneaux routiers](/assets/img/404ctf2023/Le_Tour_de_France.png)
+
+Le challenge nous propose de retrouver le lieu ou a été prise cette photo de panneaux routiers. En lisant les directions indiquées, avec une sortie vers Besançon à 300 mètres, je déduis rapidemmnt que l'ndroit que nous cherchons se situe dans le nord-est de la France.  
+
+J'ai ensuite essayé de chercher sur google maps une des routes européeennees indiquées sur les panneaux dans des zones autour de Metz, Dijon et Besançon, mais pas de chance, je ne les trouve pas. Je me rabat donc sur une méthode plus longue mais plus sûre : suivre les autoroutes depuis Paris.  
+
+Pour cela, j'utilise la carte Michelin (https://www.viamichelin.fr/web/Cartes-plans) qui me semble plus complète au niveau des noms de routes. Autour de Paris, je repère vite l'A6 au sud de Paris (qui est aussi la route européenne E15, en zoomant un peu).  
+
+![carte Michelin montrant l'A6](/assets/img/404ctf2023/tdf1.png)
+
+A partir de là, je n'ai plus qu'à suivre la route jusqu'à rencontrer la  E17, la E21 ou directement l'A5. C'est au niveau de Beaune que je rencontre le croisement de toutes ces routes.  
+
+![carte Michelin montrant Beaune](/assets/img/404ctf2023/tdf2.png)
+
+A partir de là, je n'ai plus qu'à me placer proche du croisement sur Google maps, à avancer prudemment, puis quand je croise les panneaux de la photo je récupère les coordonnés dans la barre d'url de google : c'est flag !
+
+
+![url google avec les coordonnées](/assets/img/404ctf2023/tdf3.png)
+
+Merci à Hg pour ce challenge !
+
