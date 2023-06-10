@@ -26,7 +26,7 @@ A partir de là, je n'ai plus qu'à suivre la route jusqu'à rencontrer la  E17,
 
 ![carte Michelin montrant Beaune](/assets/img/404ctf2023/tdf2.png)
 
-A partir de là, je n'ai plus qu'à me placer proche du croisement sur Google maps, à avancer prudemment, puis quand je croise les panneaux de la photo je récupère les coordonnés dans la barre d'url de google : c'est flag !
+A partir de là, je n'ai plus qu'à me placer proche du croisement sur Google maps, à avancer prudemment, puis quand je croise les panneaux de la photo je récupère les coordonnés dans la barre d'url de google : c'est flag !  
 
 
 ![url google avec les coordonnées](/assets/img/404ctf2023/tdf3.png)
